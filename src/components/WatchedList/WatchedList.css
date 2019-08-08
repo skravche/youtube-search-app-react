@@ -1,0 +1,6 @@
+.watched-list {
+  display: relative;
+  border: 1px solid lightgrey;
+  max-width: 30%;
+  min-width: 25%;
+}

@@ -1,0 +1,17 @@
+.prev-list {
+  display: inline;
+  padding: 30px;
+}
+.iteml {
+  display: flex;
+  cursor: pointer;
+  border: 0.5px solid lightblue;
+  margin: 5px;
+}
+.mini-vid {
+  max-width: 60px;
+  max-height: 50px;
+}
+p {
+  padding-left: 10px;
+}

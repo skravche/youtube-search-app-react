@@ -1,0 +1,11 @@
+.header-bar {
+  border: 3px solid lightgrey;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+}
+
+.main-content {
+  border: 3px solid lightgrey;
+  display: flex;
+}
