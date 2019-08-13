@@ -6,7 +6,6 @@ class WatchedListItem extends Component {
 
     return (
       <div>
-        <label> WatchedListItem </label>
         <span>{title}</span>
         <button type="button" onClick={onDeleted}>
           Delete

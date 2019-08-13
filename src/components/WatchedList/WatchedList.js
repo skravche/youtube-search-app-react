@@ -24,7 +24,7 @@ class WatchedList extends Component {
     const { videosData, onDeleted } = this.props;
     const { pool } = this.state;
 
-    const elements = videosData.map(item => {
+    const elements = videosData.map((item, key) => {
       return (
         <div key={item.id}>
           <p onClick={this.changePool}>{JSON.stringify(pool)}</p>

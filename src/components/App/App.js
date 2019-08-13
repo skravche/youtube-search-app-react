@@ -72,8 +72,14 @@ class App extends Component {
   };
 
   handleInputBlur = () => {
-    this.setState({ focus: false });
+    this.timeout = setTimeout(() => {
+      this.setState({ focus: false });
+    }, 300);
   };
+
+  componentWillUnmount() {
+    clearTimeout(this.timeout);
+  }
 
   render() {
     const { played, items } = this.state;
@@ -82,9 +88,6 @@ class App extends Component {
       <div>
         <div>
           <h3>State Monitor:</h3>
-          <span>Played: {JSON.stringify(played)}</span> <br />
-          <span>Items: {JSON.stringify(items)}</span> <br />
-          {/* <span>Videos: {JSON.stringify(this.state.videos)}</span> <br />  */}
         </div>
         <header>
           <SearcPanel
